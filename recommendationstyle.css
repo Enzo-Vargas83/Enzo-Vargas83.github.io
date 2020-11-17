@@ -1,0 +1,148 @@
+body {
+    background-image: url(images-projets/space_background.jpg);
+    margin: 0em;
+   }
+   
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: arial;
+    z-index: 2;
+    position: absolute;
+   }
+   
+ul li {
+    float: left;
+    width: 20vw;
+    background-color: black;
+    opacity: .8;
+    line-height: 2em;
+    text-align: center;
+   }
+   
+ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1vw;
+   }
+   
+   ul li:not(.title-site):hover
+    {
+    background-color: green;
+    }
+   
+   
+.title-site a
+{
+     font-family: 'Alatsi', sans-serif;
+     font-size: 1.5vw;
+}
+  
+.rocket
+{
+      margin-left: 10px;
+      margin-top: 10px;
+      height: 1vw;
+      width: 1vw;
+}
+  
+
+#AstronoGeekLogo
+{
+    position:absolute;
+	width:12vw;
+	height:12vw;
+	z-index:1;
+	left: 6vw;
+    top: 10vw;
+    border-radius: 60%;
+    z-index: 2;
+    transition: transform 0.5s 0.2s;
+}
+
+#AstronoGeekLogo:hover
+{
+    transform: scale(1.1);
+
+}
+
+#AstronoGeekLogo:hover ~ #AstronoGeekInfo
+{
+    visibility: visible;
+    opacity: .7;
+    animation: Apparition2 3s ;
+}
+
+#AstronoGeekInfo
+{
+    background: #000000;
+    opacity: 0;
+    text-decoration: none;
+    font-size : 1.35vw;
+    height: 15vw;
+    width: 76vw;
+    color: rgb(255, 255, 255);
+    font-family: arial, sans-serif;
+    z-index: 1;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    margin-top: 9.5vw;
+    margin-left: 20vw;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#AstronoGeekInfo a
+{
+   position: absolute;
+   text-align: left;
+   margin-left: 5.5vw;
+   margin-right: 2vw;
+   margin-top: 1.12vh;
+   margin-bottom: 1vh;
+
+}
+
+
+.videoastro
+{
+    position: absolute;
+    margin-top: 50.5vh;
+    margin-left: 15vw;
+    width: 23vw;
+    height: 13vw;
+    border-radius: 5%;
+    animation: Apparition 3s;
+}
+
+.videoastro2
+{
+    position: absolute;
+    margin-top: 50.5vh;
+    margin-left: 55vw;
+    border-radius: 5%;
+    width: 23vw;
+    height: 13vw;
+    animation: Apparition 3s;
+}
+
+
+@keyframes Apparition {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Apparition2 {
+    from{
+        width: 0vw;
+    }
+    to {
+        width: 76vw;
+    }
+}
