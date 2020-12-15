@@ -1,0 +1,212 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(images-projets/stars-3840x2160-4k-6347.jpg);
+  margin: 0em;
+  scroll-behavior: smooth;
+ }
+ 
+ ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: arial;
+  z-index: 2;
+ }
+ 
+ ul li {
+  float: left;
+  width: 20%;
+  background-color: black;
+  opacity: .8;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.25em;
+ }
+ 
+ ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+ }
+ 
+ ul li a:hover
+  {
+  background-color: green;
+  }
+
+ ul li ul li{
+  display: none;
+  width: 100%;
+ }
+
+ ul li ul li a
+ {
+  font-size: 0.75em;
+ }
+ 
+ ul li:hover ul li {
+  display: block;
+ }
+
+ul li ul li:hover
+{
+  background-color: green;
+}
+
+ .title-site a
+  {
+   font-family: 'Alatsi', sans-serif;
+   font-size: 1.5vw;
+  }
+
+.rocket
+  {
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    height: 1vw;
+    width: 1vw;
+  }
+
+
+
+.terre
+{
+float:left; 
+margin-left: 3em; 
+margin-top: 14em;
+}
+
+
+
+.fixed
+{
+position: fixed;
+width: 100%;
+}
+
+
+
+.infoterre {
+background: #000000;
+opacity: .7;
+text-decoration: none;
+text-align: center;
+font-size : 1.25em;
+top: 15em;
+left: 28em;
+width: 18vw;
+height: 35vh;
+margin: 0px;
+color: rgb(255, 255, 255);
+display: none;
+position: absolute;
+font-family: arial;
+z-index: 1;  
+}
+
+.textbox
+{
+text-align: left;
+margin: 10px;
+}
+
+
+.terre:hover ~ .infoterre
+{
+display: block;
+}
+
+
+.mars
+{
+  float: right; 
+  margin-right: 5em; 
+  margin-top: 34em;
+}
+
+
+.infomars
+{
+  background: #000000;
+  opacity: .7;
+  text-decoration: none;
+  text-align: center;
+  font-size : 1.25em;
+  width: 18vw;
+  height: 35vh;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  display: none;
+  position: absolute;
+  top: 29em;
+  left: 50em;
+  font-family: arial;
+  z-index: 1;
+}
+
+.mars:hover ~ .infomars
+{
+  display: block;
+}
+
+.mercure
+{
+  float:left; 
+  margin-top: 54em;
+}
+
+.info-mercure
+{
+  background: #000000;
+  opacity: .7;
+  text-decoration: none;
+  text-align: center;
+  font-size : 1.25em;
+  width: 18vw;
+  height: 35vh;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  display: none;
+  position: absolute;
+  top: 45em;
+  left: 5em;
+  font-family: arial;
+  z-index: 1;
+}
+
+.mercure:hover ~ .info-mercure
+{
+  display: block;
+}
+
+.venus
+{
+  float:right; 
+  margin-top: 84em;
+}
+
+.info-venus
+{
+  background: #000000;
+  opacity: .7;
+  text-decoration: none;
+  text-align: center;
+  font-size : 1.25em;
+  width: 18vw;
+  height: 35vh;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  display: none;
+  position: absolute;
+  top: 69em;
+  left: 70em;
+  font-family: arial;
+  z-index: 1;
+}
+
+.venus:hover ~ .info-venus
+{
+  display: block;
+}

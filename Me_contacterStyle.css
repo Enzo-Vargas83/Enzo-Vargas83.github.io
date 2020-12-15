@@ -1,85 +1,233 @@
 body {
-    background-image: url(images-projets/space_background.jpg);
-    margin: 0em;
-   }
-   
-   ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    font-family: arial;
-    z-index: 2;
-   }
-   
-   ul li {
-    float: left;
-    width: 20vw;
-    background-color: black;
-    opacity: .8;
-    line-height: 2em;
-    text-align: center;
-   }
-   
-   ul li a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-size: 1vw;
-   }
-   
-   ul li:hover
-    {
-    background-color: green;
-    }
-   
-   
-   .title-site a
-    {
-     font-family: 'Alatsi', sans-serif;
-     font-size: 1.5vw;
-    }
-  
-  .rocket
-    {
-      margin-left: 10px;
-      margin-top: 10px;
-      height: 1vw;
-      width: 1vw;
-    }
-  
-    .carre-formulaire
-        {
+  background-image: url(images-projets/stars-3840x2160-4k-6347.jpg);
+  background-repeat: no-repeat;
+  margin: 0em;
+  scroll-behavior: smooth;
+ }
+ 
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: arial;
+  z-index: 2;
+ }
+ 
+ul li {
+  float: left;
+  width: 20%;
+  background-color: black;
+  opacity: .8;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.25em;
+ }
+ 
+ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+ }
+ 
+ul li a:hover
+  {
+  background-color: green;
+  }
 
-        background: #000000;
-        opacity: .7;
-        text-decoration: none;
-        text-align: center;
-        font-size : 1vw;
-        width: 35vw;
-        height: 25vw;
-        margin: 0px;
-        color: rgb(255, 255, 255);
-        position: absolute;
-        top: 25%;
-        left: 5%;
-        font-family: arial;
-        z-index: 1;
-        }  
-    .carre-formulaire input
-        {
-            width: 10vw;
-            height: 1vw;
-        }
-    .carre-formulaire textarea
-        {
-            width: 10vw;
-            height: 2vw;
-        }
+ul li ul li{
+  display: none;
+  width: 100%;
+ }
 
-    div .button
-        {
-           width: 15vw;
-           height: 5vw;
-           margin-left: 10em;
-           margin-top: 1em;
-        }
+ul li ul li a
+ {
+  font-size: 0.75em;
+ }
+ 
+ul li:hover ul li {
+  display: block;
+ }
+
+ul li ul li:hover
+{
+  background-color: green;
+}
+
+.title-site a
+  {
+   font-family: 'Alatsi', sans-serif;
+   font-size: 1.5vw;
+  }
+
+.rocket
+{
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 1vw;
+  width: 1vw;
+}
+
+.carre-formulaire
+{
+  background: #000000;
+  opacity: .7;
+  text-decoration: none;
+  text-align: center;
+  font-size : 1vw;
+  width: 40vw;
+  height: 30vw;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 10em;
+  left: 5em;
+  font-family: arial;
+  z-index: 1;
+
+}
+
+div form
+{
+  margin-top: 5em;
+
+}
+
+.informations
+{
+  width: 45vw;
+  height: 30vw;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 11.75em;
+  left: 56em;
+}
+
+.informations h1
+{
+  margin-left: 7em;
+  margin-top: 5em;
+  font-size: 1.5em;
+  color: white;
+}
+
+.informations h2
+{
+  margin-left: 7em;
+  margin-top: 8em;
+  font-size: 1.5em;
+  color: white;
+}
+
+#logotwitter
+{
+  width: 8vw;
+  height: 16vh;
+  position: absolute;
+  margin-top: 4em;
+  margin-left: 1em;
+}
+
+#logoinsta
+{
+  height: 13vh;
+  width: 8vw;
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 1em;
+}
+
+
+@media (min-device-width: 360px) and (max-device-height: 852px) and (orientation : portrait)
+{
+
+    ul{
+      display: block;
+    }
+    ul li {
+      line-height: 3.5em;
+      width: 100%;
+     }
+
+    ul li a {
+
+      font-size: 1.5em;
+    }
+
+      .title-site a
+      {
+       font-size: 2em;
+      }
+
+      .rocket
+      {
+        height: 0.85em;
+        width: 0.85em;
+      }
+
+
+      .carre-formulaire
+      {
+        left: 1em;
+        top: 16em;
+        width: 94vw;
+        height: 80vw;
+        font-size : 3vw;
+
+      }
+  .informations
+  {
+    width: 94vw;
+    height: 50vw;
+    top: 85em;
+    left: 2em;
+  }
+
+  .informations h1
+  {
+  margin-left: 6em;
+  margin-top: 4em;
+  font-size: 1.8em;
+  color: white;
+  }
+
+  .informations h2
+  {
+  margin-left: 7em;
+  margin-top: 7em;
+  font-size: 1.8em;
+  color: white;
+  }
+
+  #logotwitter
+  {
+  width: 16vw;
+  height: 10vh;
+  margin-top: 2em;
+  }
+
+  #logoinsta
+  {
+  height: 7vh;
+  width: 16vw;
+  position: absolute;
+  margin-top: 8em;
+  margin-left: 1em;
+  }
+
+  form .lebtn
+  {
+    width: 20.5em;
+    height: 4em;
+    font-size: 1em;
+    margin-top: 0.5em;
+  }
+
+  form textarea
+  {
+    width: 40em;
+    height: 10em;
+    font-size: 0.5em;
+
+  }
+}

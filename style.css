@@ -1,0 +1,317 @@
+body {
+  background-image: url(images-projets/stars-3840x2160-4k-6347.jpg);
+  margin: 0em;
+  scroll-behavior: smooth;
+ }
+ 
+ ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: arial;
+  z-index: 3;
+ }
+ 
+ ul li {
+  float: left;
+  width: 20%;
+  background-color: black;
+  opacity: .8;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.25em;
+ }
+ 
+ ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+ }
+ 
+ ul li a:hover
+  {
+  background-color: green;
+  }
+
+ ul li ul li{
+  display: none;
+  width: 100%;
+ }
+
+ ul li ul li a
+ {
+  font-size: 0.75em;
+ }
+ 
+ ul li:hover ul li {
+  display: block;
+ }
+
+ul li ul li:hover
+{
+  background-color: green;
+}
+
+ .title-site a
+  {
+   font-family: 'Alatsi', sans-serif;
+   font-size: 1.5vw;
+  }
+
+.rocket
+  {
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    height: 1vw;
+    width: 1vw;
+  }
+
+.fixed
+{
+  position: fixed;
+  width: 100%;
+}
+  
+.Bienvenue
+  {
+    position: absolute;
+    margin-top: 5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 5em;
+    color: white;
+    font-family: 'Goldman', cursive;
+    opacity: 0.85;
+    z-index: 2;
+    padding: 0px;
+  }
+
+.informations_site
+{
+  background-color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  top: 100vh;
+  z-index: 1;
+  padding: 0px;
+}
+
+.informations_site a
+{
+  color: white;
+  position: absolute;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: 1.25vw;
+  font-family: 'Press Start 2P', cursive;
+
+}
+
+.minibox
+{
+  background-color: black;
+  opacity: 0.8;
+  width: 42vh;
+  height: 2em;
+  position: absolute;
+  top: 96.3vh;
+  z-index: 2;
+  border-top: 0.15em solid white;
+  border-right: 00.15em solid white;
+  border-top-right-radius: 45%;
+  padding: 0px;
+
+}
+
+.minibox h1
+{
+  color: green;
+  margin-left: 1em; 
+  font-size: 1.2em;
+  font-family: 'Press Start 2P', cursive;
+
+}
+
+/* iphone 10 */
+@media (min-device-width: 360px) and (max-device-height: 852px) and (orientation : portrait)
+{
+    .Bienvenue
+      {
+        margin-left: 2em;
+        margin-right: 3.75em;
+        margin-top: 14em;
+        font-size: 2em;
+      }
+
+      ul{
+        display: block;
+      }
+      ul li {
+        line-height: 2.5em;
+        width: 100%;
+       }
+
+      ul li a {
+
+        font-size: 0.45em;
+      }
+
+      .title-site a
+      {
+       font-size: 0.65em;
+      }
+
+      .informations_site a
+      {
+        font-size: 0.65em;
+        margin-top: 5em;
+      }
+
+      .rocket
+      {
+        height: 0.55em;
+        width: 0.55em;
+      }
+
+      .informations_site
+      {
+        height: 15em;
+ 
+      }
+
+      .minibox
+      {
+        width: 90%;
+        top: 95.8vh;
+      }
+
+      .minibox h1
+      { 
+        font-size: 1em;
+        margin-left: 0.60em;
+
+      }
+
+}
+
+/* iphone 5 */
+@media (min-device-width: 300px) and (max-device-height: 570px) and (orientation : portrait)
+{
+
+  ul li {
+    line-height: 2.5em;
+    width: 100%;
+   }
+
+  ul li a {
+
+    font-size: 0.75em;
+  }
+
+  .Bienvenue
+  {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+
+  .title-site a {
+
+    font-size: 1.5em;
+
+  }
+
+  .rocket {
+        height: 0.55em;
+        width: 0.55em;
+  }
+
+  .informations_site
+      {
+        height: 12em;
+ 
+      }
+
+      .informations_site a
+      {
+        font-size: 0.55em;
+        margin-top: 4em;
+      }
+
+      .minibox
+      {
+        width: 75%;
+        top: 94vh;
+      }
+
+      .minibox h1
+      { 
+        font-size: 0.7em;
+        margin-left: 0.60em;
+
+      }
+
+}
+
+
+
+/* Ipad */
+@media (min-device-width: 768px) and (max-device-height: 1047px) and (orientation : portrait)
+{
+
+  ul li {
+    line-height: 2.5em;
+    width: 100%;
+   }
+
+  ul li a {
+
+    font-size: 1.1em;
+  }
+
+  .Bienvenue
+  {
+    font-size: 4em;
+    margin-top: 8em;
+  }
+
+  .title-site a {
+
+    font-size: 1.75em;
+
+  }
+
+  .rocket {
+        height: 0.55em;
+        width: 0.55em;
+  }
+
+  .informations_site
+      {
+        height: 15em;
+ 
+      }
+
+      .informations_site a
+      {
+        font-size: 1em;
+        margin-top: 2.5em;
+      }
+
+      .minibox
+      {
+        width: 45%;
+        top: 96.6vh;
+      }
+
+      .minibox h1
+      { 
+        font-size: 1em;
+        margin-left: 0.60em;
+
+      }
+
+}
+

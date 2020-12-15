@@ -4,14 +4,20 @@
 <head>
     <title>Astronopedia</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Site d'un jeune amateur d'astronomie, passionné depuis sa plus petite enfance,
-    ce site fait appel à 2 de mes passions l'informatique et l'astronomie j'espère faire en sorte de partager ma passion." />
+        ce site fait appel à 2 de mes passions l'informatique et l'astronomie j'espère faire en sorte de partager ma passion."/>
     <meta name="keywords" content="astronomie,passion,amateur">
     <meta name="author" content="Vargas Enzo">
-    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="stylediff.css">
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
-    <link href="images-projets/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="images-projets/favicon.ico"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,13 +25,35 @@
     <!-- Menu de navigation du site -->
     <nav>
         <ul class="fixed">
-            <li class=""><a>Quelques informations</a>
-            <li><a href="recommendation.html">Recommandation</a>
+            <li><a>Quelques informations</a>
+                <ul>
+                         <li class="sublist"><a href="QuelquesInformationsTellurique.html">Planètes Telluriques</a></li>
+                         <li><a href="QuelquesInformationGazeuse.html">Planètes Gazeuses</a></li>
+                </ul>
             </li>
-            <li class="title-site"><a>Astronopedia<img class="rocket" src="images-projets/rocket-icon-white.png" alt="fuséelogo"></a></li>
+            <li><a href="recommendation.html">Recommandation</a></li>
+            <li class="title-site"><a href="#inf">Astronopedia<img class="rocket" src="images-projets/rocket-icon-white.png" alt="fuséelogo"></a></li>
             <li><a href="Me_contacter.html">Me contacter</a></li>
-            <li><a>????</a></li>
+            <li id="theme-btn"><a>Changer de thème</a></li>
         </ul>
     </nav>
 
+    <diV><h1 class="Bienvenue">Bienvenue sur Astronopedia</h1></diV>
+    <div class="informations_site">
+        <a id="inf">Bonjour, je m'appelle Enzo Vargas, je suis passionné d'Astronomie et comme ultime hommage j'ai décidé de réaliser ce site,
+        vous retrouveraiez ici des informations très simple et basique mais je réalise tout ceci afin de partager ma passion du gigantisme de l'espace et de l'univers. <br />
+        <br />
+        A votre disposition quelques onglets qui vous permettrons d'exploxer ce site, il est possible qu'avec le temps le contenus d'Astronopedia s'étoffe.
+        </a>
+    </div>
+    <div class="minibox"><h1>Rapport de Mission</h1></div>
+
+<script>
+    var body = document.querySelector('body')
+    var btn = document.querySelector('#theme-btn')
+    btn.addEventListener("click", function () {
+            body.classList.toggle('switch')
+    });
+</script>
 </body>
+

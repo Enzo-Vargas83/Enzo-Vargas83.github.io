@@ -1,5 +1,5 @@
 body {
-    background-image: url(images-projets/space_background.jpg);
+    background-image: url(images-projets/stars-3840x2160-4k-6347.jpg);
     margin: 0em;
    }
    
@@ -9,36 +9,53 @@ ul {
     list-style: none;
     font-family: arial;
     z-index: 2;
-    position: absolute;
    }
    
-ul li {
+   ul li {
     float: left;
-    width: 20vw;
+    width: 20%;
     background-color: black;
     opacity: .8;
-    line-height: 2em;
+    line-height: 3em;
     text-align: center;
+    font-size: 1.25em;
    }
    
-ul li a {
+   ul li a {
     text-decoration: none;
     color: white;
     display: block;
-    font-size: 1vw;
    }
    
-   ul li:not(.title-site):hover
+   ul li a:hover
     {
     background-color: green;
     }
+  
+   ul li ul li{
+    display: none;
+    width: 100%;
+   }
+  
+   ul li ul li a
+   {
+    font-size: 0.75em;
+   }
    
-   
-.title-site a
-{
+   ul li:hover ul li {
+    display: block;
+   }
+  
+  ul li ul li:hover
+  {
+    background-color: green;
+  }
+  
+   .title-site a
+    {
      font-family: 'Alatsi', sans-serif;
      font-size: 1.5vw;
-}
+    }
   
 .rocket
 {
@@ -51,10 +68,9 @@ ul li a {
 
 #AstronoGeekLogo
 {
-    position:absolute;
+    position: absolute;
 	width:12vw;
 	height:12vw;
-	z-index:1;
 	left: 6vw;
     top: 10vw;
     border-radius: 60%;
@@ -72,7 +88,7 @@ ul li a {
 {
     visibility: visible;
     opacity: .7;
-    animation: Apparition2 3s ;
+    animation: Apparition2 1s;
 }
 
 #AstronoGeekInfo
@@ -81,7 +97,7 @@ ul li a {
     opacity: 0;
     text-decoration: none;
     font-size : 1.35vw;
-    height: 15vw;
+    height: 12.5vw;
     width: 76vw;
     color: rgb(255, 255, 255);
     font-family: arial, sans-serif;
@@ -102,7 +118,6 @@ ul li a {
    margin-right: 2vw;
    margin-top: 1.12vh;
    margin-bottom: 1vh;
-
 }
 
 
@@ -110,7 +125,7 @@ ul li a {
 {
     position: absolute;
     margin-top: 50.5vh;
-    margin-left: 15vw;
+    left: 10vw;
     width: 23vw;
     height: 13vw;
     border-radius: 5%;
@@ -121,13 +136,23 @@ ul li a {
 {
     position: absolute;
     margin-top: 50.5vh;
-    margin-left: 55vw;
+    left: 40vw;
     border-radius: 5%;
     width: 23vw;
     height: 13vw;
     animation: Apparition 3s;
 }
 
+.videoastro3
+{
+    position: absolute;
+    margin-top: 50.5vh;
+    left: 70vw;
+    border-radius: 5%;
+    width: 23vw;
+    height: 13vw;
+    animation: Apparition 3s;
+}
 
 @keyframes Apparition {
     from{
@@ -141,8 +166,80 @@ ul li a {
 @keyframes Apparition2 {
     from{
         width: 0vw;
+        font-size: 0vw;
     }
     to {
         width: 76vw;
+        font-size: 1.35vw;
+    }
+}
+
+
+@media (min-device-width: 360px) and (max-device-height: 852px) and (orientation : portrait)
+{
+
+    ul{
+      display: block;
+    }
+    ul li {
+      line-height: 3.5em;
+      width: 100%;
+     }
+
+    ul li a {
+
+      font-size: 1.5em;
+    }
+
+    .title-site a
+    {
+      font-size: 2em;
+    }
+
+    .rocket
+    {
+        height: 0.85em;
+        width: 0.85em;
+    }
+
+    #AstronoGeekLogo
+    {
+        top: 50vw;
+        left: 38vw;
+        width: 22vw;
+        height: 22vw;
+    }
+
+    #AstronoGeekInfo
+    {
+        top : 70vw;
+        margin-left: 1vw;
+        height: 50vw;
+        width: 98vw;
+        font-size: 2em;
+    }
+
+    .videoastro
+    {
+        margin-top: 63vh;
+        left: 14vw;
+        width: 73vw;
+        height: 40vw;
+    }
+
+    .videoastro2
+    {
+        margin-top: 82vh;
+        left: 14vw;
+        width: 73vw;
+        height: 40vw;
+    }
+
+    .videoastro3
+    {
+        margin-top: 102vh;
+        left: 14vw;
+        width: 73vw;
+        height: 40vw;
     }
 }

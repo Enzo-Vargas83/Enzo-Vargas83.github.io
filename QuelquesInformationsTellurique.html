@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Astronopedia</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Ici se trouve des informations simple et basique sur les planètes telluriques qui composent notre système solaire."/>
+    <meta name="keywords" content="astronomie,passion,amateur,tellurique">
+    <meta name="author" content="Vargas Enzo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="QlqsInfoStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylediff.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="fixed">
+            <li class=""><a> Menu</a>
+                <ul>
+                    <li><a href="">Planètes Telluriques</a></li>
+                    <li><a href="QuelquesInformationGazeuse.html">Planètes Gazeuses</a></li>
+
+                </ul>
+            <li><a href="recommendation.html">Recommandation</a>
+            </li>
+            <li class="titlesite"><a href="index.html">Astronopedia<img class="rocket" src="images-projets/rocket-icon-white.png" alt="fuséelogo"
+                        width="30" height="30"></a></li>
+            <li><a href="Me_contacter.html">Me Contacter</a> </li>
+            <li class="theme" id="theme-btn"><a>Changer de thème</a></li>
+        </ul>
+    </nav>
+
+    <img class="terre" src="images-projets/terre.png" alt="terreimg" width="450"
+        height="450">
+    <div class="infoterre">
+        <h1>Terre</h1>
+        <p class="textbox">
+            - Distance du soleil : 150 000 000 de km<br />
+            - Superficie : 510 067 420 km2 <br />
+            - Cycle complet : 365,3 jours
+        </p>
+    </div>
+    <img class="mars" src="images-projets/mars.png" alt="marsimg" width="400" height="400">
+    <div class="infomars">
+        <h1>Mars</h1>
+        <p class="textbox">
+            - Distance du soleil : 220 millions de km <br />
+            - Superficie : 144 798 500 km2 <br />
+            - Cycle complet : 687 jours
+        </p>
+    </div>
+    <img class="mercure" src="images-projets/mercure.png" alt="mercureimg" width="400" height="400">
+    <div class="info-mercure">
+        <h1>Mercure</h1>
+        <p class="text-box">
+        - Type : tellurique <br />
+        - Superficie : 75×106 km2 <br />
+        - Cycle complet : ~88 jours
+        </p>
+    </div>
+    <img class="venus" src="images-projets/venus.png " alt="venusimg" width="400" height="400">
+    <div class="info-venus">
+        <h1>Vénus</h1>
+        <p class="text-box">
+            - Type : tellurique <br />
+            - Surface : 460×106 km2 <br />
+            - Cycle complet : 224,7 jours
+        </p>
+    </div>
+
+    <script>
+        var body = document.querySelector('body')
+        var btn = document.querySelector('#theme-btn')
+        btn.addEventListener("click", function () {
+            body.classList.toggle('switch')
+        });
+    </script>
+</body>

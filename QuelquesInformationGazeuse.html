@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Astronopedia</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Ici se trouve des informations simple et basique sur les planètes gazeuses qui composent notre système solaire."/>
+    <meta name="keywords" content="astronomie,passion,amateur,tellurique">
+    <meta name="author" content="Vargas Enzo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="QlqInfoStyleG2.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylediff.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="fixed">
+            <li class=""><a> Menu</a>
+                <ul>
+                    <li><a href="QuelquesInformationsTellurique.html">Planètes Telluriques</a></li>
+                    <li><a href="">Planètes Gazeuses</a></li>
+
+                </ul>
+            <li><a href="recommendation.html">Recommandation</a>
+            </li>
+            <li class="titlesite"><a href="index.html">Astronopedia<img class="rocket" src="images-projets/rocket-icon-white.png" alt="fuséelogo"
+                        width="30" height="30"></a></li>
+            <li><a href="Me_contacter.html">Me Contacter</a> </li>
+            <li class="theme" id="theme-btn"><a>Changer de thème</a></li>
+        </ul>
+    </nav>
+
+    <img class="saturne" src="images-projets/saturne.png" alt="saturneimg" width="730" height="350">
+    <div class="info-saturne">
+        <h1>Saturn</h1>
+        <p class="text-box">
+            - Type : géante gazeuse <br />
+            - Superficie : 43,466×109 km2
+            (83,703 Terres)<br />
+            - Cycle complet : 29 ans +167jours
+        </p>
+    </div>
+    <img class="jupiter" src="images-projets/jupiter.png" alt="jupiterimg" width="400" height="400">
+    <div class="info-jupiter">
+        <h1>Jupiter</h1>
+        <p class="text-box">
+            - Type : géante gazeuse <br />
+            - 6,14×1010 km2
+            (120,5 Terres)<br />
+            - Cycle complet : 11 ans +315jours
+        </p>
+    </div>
+    <img class="neptune" src="images-projets/neptune.png" alt="neptuneimg" width="400" height="400">
+    <div class="info-neptune">
+        <h1>Neptune</h1>
+        <p class="text-box">
+            - Type : géante gazeuse <br />
+            - Superficie : 7,6408×109 km2
+            (14,98 Terres)<br />
+            - Cycle complet : 164 ans +280jours
+        </p>
+    </div>
+    <img class="uranus" src="images-projets/Uranus.png" alt="uranusimg" width="400" height="400">
+    <div class="info-uranus">
+        <h1>Uranus</h1>
+        <p class="text-box">
+            - Type : géante gazeuse <br />
+            - Superficie : 8,0831×109 km2
+            (15,847 Terres)<br />
+            - Cycle complet : ~84 ans
+        </p>
+    </div>
+ 
+    <script>
+        var body = document.querySelector('body')
+        var btn = document.querySelector('#theme-btn')
+        btn.addEventListener("click", function () {
+            body.classList.toggle('switch')
+        });
+    </script>
+
+</body>
