@@ -110,30 +110,6 @@ ul li ul li:hover
 
 }
 
-.minibox
-{
-  background-color: black;
-  opacity: 0.8;
-  width: 42vh;
-  height: 2em;
-  position: absolute;
-  top: 96.3vh;
-  z-index: 2;
-  border-top: 0.15em solid white;
-  border-right: 00.15em solid white;
-  border-top-right-radius: 45%;
-  padding: 0px;
-
-}
-
-.minibox h1
-{
-  color: green;
-  margin-left: 1em; 
-  font-size: 1.2em;
-  font-family: 'Press Start 2P', cursive;
-
-}
 
 /* iphone 10 */
 @media (min-device-width: 360px) and (max-device-height: 852px) and (orientation : portrait)
@@ -182,18 +158,6 @@ ul li ul li:hover
  
       }
 
-      .minibox
-      {
-        width: 90%;
-        top: 95.8vh;
-      }
-
-      .minibox h1
-      { 
-        font-size: 1em;
-        margin-left: 0.60em;
-
-      }
 
 }
 
@@ -240,18 +204,6 @@ ul li ul li:hover
         margin-top: 4em;
       }
 
-      .minibox
-      {
-        width: 75%;
-        top: 94vh;
-      }
-
-      .minibox h1
-      { 
-        font-size: 0.7em;
-        margin-left: 0.60em;
-
-      }
 
 }
 
@@ -298,19 +250,6 @@ ul li ul li:hover
       {
         font-size: 1em;
         margin-top: 2.5em;
-      }
-
-      .minibox
-      {
-        width: 45%;
-        top: 96.6vh;
-      }
-
-      .minibox h1
-      { 
-        font-size: 1em;
-        margin-left: 0.60em;
-
       }
 
 }

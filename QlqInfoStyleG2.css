@@ -154,7 +154,8 @@ html{
   .neptune
   {
     float:left; 
-    margin-top: 68em;
+    margin-left: 0.5em; 
+    margin-top: 67em;
   }
   
   .info-neptune
@@ -183,9 +184,9 @@ html{
   
   .uranus
   {
-    float:left; 
-    margin-top: 1em;
-    margin-right: 18em;
+    float: right; 
+    margin-right: 6em; 
+    margin-top: 36em;
   }
   
   .info-uranus
@@ -201,8 +202,8 @@ html{
     color: rgb(255, 255, 255);
     display: none;
     position: absolute;
-    top: 77em;
-    left: 26em;
+    top: 79em;
+    left: 46em;
     font-family: arial;
     z-index: 1;
   }
