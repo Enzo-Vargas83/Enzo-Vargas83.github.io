@@ -210,3 +210,102 @@ display: block;
 {
   display: block;
 }
+
+/* iphone 10 */
+@media (min-device-width: 360px) and (max-device-height: 852px) and (orientation : portrait)
+{
+
+      ul{
+        display: block;
+      }
+      ul li {
+        line-height: 2.5em;
+        width: 100%;
+       }
+
+      ul li a {
+
+        font-size: 0.45em;
+      }
+
+      .title-site a
+      {
+       font-size: 0.65em;
+      }
+
+      .rocket
+      {
+        height: 0.55em;
+        width: 0.55em;
+      }
+
+
+}
+
+/* iphone 5 */
+@media (min-device-width: 300px) and (max-device-height: 570px) and (orientation : portrait)
+{
+
+  ul li {
+    line-height: 2.5em;
+    width: 100%;
+   }
+
+  ul li a {
+
+    font-size: 0.75em;
+  }
+
+  .Bienvenue
+  {
+    font-size: 2em;
+    margin-top: 50em;
+  }
+
+  .title-site a {
+
+    font-size: 1.5em;
+
+  }
+  .rocket {
+    height: 0.55em;
+    width: 0.55em;
+  }
+
+}
+
+
+
+/* Ipad */
+@media (min-device-width: 768px) and (max-device-height: 1047px) and (orientation : portrait)
+{
+
+  ul li {
+    line-height: 2.5em;
+    width: 100%;
+   }
+
+  ul li a {
+
+    font-size: 1.1em;
+  }
+
+  .Bienvenue
+  {
+    font-size: 4em;
+    margin-top: 8em;
+  }
+
+  .title-site a {
+
+    font-size: 1.75em;
+
+  }
+
+  .rocket {
+        height: 0.55em;
+        width: 0.55em;
+  }
+
+}
+
